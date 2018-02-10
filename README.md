@@ -1,4 +1,4 @@
-# Space Shooter 2D Kit for Unreal Engine
+# Space Shooter 2D Kit for Unreal Engine 4
 
 Under review for the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace)
 
