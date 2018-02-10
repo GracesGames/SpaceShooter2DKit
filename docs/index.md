@@ -21,4 +21,4 @@ __Features include:__
 - Systems for health, score and save/load functionality  
 - Much more.
 
-For a complete list, see the [Features](https://gracesgames.github.io/SpaceShooter2DKit/Features) page
+For a complete list, see the [Features](https://gracesgames.github.io/SpaceShooter2DKit/features/) page
