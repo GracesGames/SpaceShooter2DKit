@@ -22,3 +22,5 @@ __Features include:__
 - Much more.
 
 For a complete list, see the [Features](https://gracesgames.github.io/SpaceShooter2DKit/features/) page
+
+![FeaturedImage]({{ "/assets/images/FeaturedImage.png" | absolute_url }})
