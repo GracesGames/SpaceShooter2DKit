@@ -4,7 +4,7 @@ layout: default
 
 # Space Shooter 2D Kit
 
-Under review for the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace)
+Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/space-shooter-2d-kit)
 
 The Space Shooter 2D Kit is an easy to use template for creating top down space shooter type of games in 2D!
  
