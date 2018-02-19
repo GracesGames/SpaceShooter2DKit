@@ -91,8 +91,8 @@ __Save Game File__
     
 __Other__
 
-Example flipbooks (animations)
-Example sound effects
-Example game sounds
+* Example animations (Flipbooks)
+* Example sound effects
+* Example game sounds
 
 Fully customizable to support the needs of your game

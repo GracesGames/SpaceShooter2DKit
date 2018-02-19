@@ -10,7 +10,7 @@ The Space Shooter 2D Kit is an easy to use template for creating top down space 
  
 The template is created using Blueprints and allows easy customization.
  
-Project will be maintained, so feel free to get in touch to suggest changes, features or anything else.
+The project will be maintained, so feel free to get in touch to suggest changes, features or anything else.
 
 __Features include:__ 
 
@@ -19,8 +19,8 @@ __Features include:__
 - Scrolling background,  
 - Spawners for enemies, pickup and waves of enemies  
 - Systems for health, score and save/load functionality  
-- Much more.
+- And much more.
 
-For a complete list, see the [Features](https://gracesgames.github.io/SpaceShooter2DKit/features/) page
+For a complete overview, see the [Features](https://gracesgames.github.io/SpaceShooter2DKit/features/) page
 
 ![FeaturedImage]({{ "/assets/images/FeaturedImage.png" | absolute_url }})
