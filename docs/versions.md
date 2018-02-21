@@ -10,6 +10,10 @@ permalink: /versions/
 
 ### Version 1.1.0 (Work in Progress)
 
+##### Release date: TBD
+
+Features:
+
 * Mobile support
 * Health regen option
 * Continuous shooting option
@@ -17,6 +21,8 @@ permalink: /versions/
 Want more? Send an [email][mail] or create a [GitHub issue][github-issue]
 
 ### Version 1.0.0
+
+##### Release date: 17-02-2018
 
 * First release
 
