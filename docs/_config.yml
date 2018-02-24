@@ -14,11 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Space Shooter 2D Kit
-email: GracesGamesBV@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Space Shooter 2D Kit for Unreal Engine 4
 baseurl: "/SpaceShooter2DKit" # the subpath of your site, e.g. /blog
 url: "https://gracesgames.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+author: Graces Games
+email: GracesGamesBV@gmail.com
 github_username:  GracesGames
 
 google_analytics: UA-99027396-7
@@ -28,6 +30,7 @@ markdown: kramdown
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
