@@ -7,7 +7,10 @@ layout: default
 Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/space-shooter-2d-kit)
 
 The Space Shooter 2D Kit is an easy to use template for creating top down space shooter type of games in 2D!
- 
+
+Supports desktop and mobile platforms.  
+Tested on Windows, Mac OS and Android.  
+
 The template is created using Blueprints and allows easy customization.
  
 The project will be maintained, so feel free to get in touch to suggest changes, features or anything else.

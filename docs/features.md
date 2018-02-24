@@ -13,7 +13,7 @@ The Space Shooter 2D Kit provides:
 __Player__
 
 * Move horizontal and vertical
-* Fire projectiles
+* Fire modes (tap, hold and automatic)
 * Activate nuke
 
 __Environment__
@@ -39,6 +39,7 @@ __Health System__
 * Shared logic for Player and Enemies
 * Custom health values
 * Modify maximum health
+* Health regen
 * Death state
 
 __Pickups__
@@ -71,6 +72,9 @@ __HUD__
     * High score
     * Current score
     * Return to main menu
+    
+* Joystick and buttons (Mobile)
+* Pause button (Mobile)
 
 __UI__
 
@@ -80,7 +84,7 @@ __UI__
     * Quit
 * Main menu
     * Start
-    * Options (Screen resolutions)
+    * Screen resolutions options (Desktop)
     * Controls
     * Quit
     

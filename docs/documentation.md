@@ -12,8 +12,9 @@ permalink: /documentation/
 
 __Base Character__
 
-BP_BaseCharacter is the parent class of the base enemy and player. It implements the changing of Flipbooks function and the health system features.  
-This health system handles taking damage, changes the maximum health and checking if the character is dead.
+BP_BaseCharacter is the parent class of the base enemy and player. It implements the changing of Flipbooks function and the health and health regen systems.  
+The health system handles taking damage, changes the maximum health and checking if the character is dead.  
+The health regen system, regenerates the character's health after not taking damage for a while.
     
 __Base Enemy__
 
@@ -24,7 +25,13 @@ __Player__
 
 BP_Player is the player of the game. It handles player input for movement, firing projectiles and activating nukes.  
 The player support movement using the built-in Unreal Engine physics of simple sweep movement.  
-It also allows for several skills using the different pickups like activating a shield and upgrading its weapon from single shot to double or even triple shot.
+It also allows for several skills using the different pickups like activating a shield and upgrading its weapon from single shot to double or even triple shot.  
+The player has three fire modes:
+* Tap: fires one projectile per fire input  
+* Hold: continuously fires projectiles until the fire input is released  
+* Automatic: continuously firing projectiles until death
+
+The player also holds the variable to toggle the mobile user interface.
 
 ### Game
 
@@ -38,7 +45,7 @@ BP_SpaceShooter2DGameState is the game state and handles the saving and loading 
 
 __Save Game__
 
-BP_SpaceShooter2DSaveGame is the save game and acts as a container for the save data (e.g. high score)
+BP_SpaceShooter2DSaveGame is the save game and acts as a container for the save data (e.g. high score).
 
 ### Pickups
 
@@ -48,19 +55,19 @@ BP_BasePickup is the parent class of all the pickup types. It handles the activa
 
 __Health Pickup__
 
-BP_HealthPickup is a pickup that return a set amount of health to the player
+BP_HealthPickup is a pickup that return a set amount of health to the player.
 
 __Nuke Pickup__
 
-BP_NukePickup is a pickup that adds one nuke ammo to the player
+BP_NukePickup is a pickup that adds one nuke ammo to the player.
 
 __Shield Pickup__
 
-BP_ShieldPickup is a pickup that activates the shield of the player
+BP_ShieldPickup is a pickup that activates the shield of the player.
 
 __Weapon Upgrade Pickup__
 
-BP_WeaponUpgradePickup is a pickup that upgrades the weapon of the player
+BP_WeaponUpgradePickup is a pickup that upgrades the weapon of the player.
 
 ### Projectiles
 
@@ -100,12 +107,15 @@ BP_WaveSpawner is a spawner that spawns waves of enemies randomly chosen from th
 __HUD__
 
 BP_HUD is the in-game user interface and shows the player the current score, health, and amount of nuke ammo.  
-It also defines the game over screen with the high score, current score and a return to menu button.
+It also defines the game over screen with the high score, current score and a return to menu button.  
+The MobileHUD version is created for mobile support. It is more centered to show the virtual joystick and buttons (fire, nuke and pause).
 
 __Main Menu__
 
-BP_MainMenu is the main menu user interface and allows the player to start the game, change settings (e.g. resolutions), show the controls and quit the game.
+BP_MainMenu is the main menu user interface and allows the player to start the game, change settings (e.g. resolutions), show the controls and quit the game.  
+The MobileMainMenu version is created for mobile support. It does not show the resolution options.
 
 __Pause Menu__
 
-BP_PauseMenu is the pause menu user interface and allows the player to continue the game, reset the high score and return to the main menu.
+BP_PauseMenu is the pause menu user interface and allows the player to continue the game, reset the high score and return to the main menu.  
+The MobilePauseMenu version is created for mobile support. It has bigger buttons to better support touch input.

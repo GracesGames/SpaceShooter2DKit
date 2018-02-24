@@ -8,17 +8,17 @@ permalink: /versions/
 
 ***
 
-### Version 1.1.0 (Work in Progress)
+Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
+
+### Version 1.1.0 (Pending Approval)
 
 ##### Release date: TBD
 
 Features:
 
 * Mobile support
+* Fire modes (tap, hold and automatic)
 * Health regen option
-* Continuous shooting option
-
-Want more? Send an [email][mail] or create a [GitHub issue][github-issue]
 
 ### Version 1.0.0
 
@@ -28,4 +28,5 @@ Want more? Send an [email][mail] or create a [GitHub issue][github-issue]
 
 
 [mail]: mailto:GracesGamesBV@gmail.com
+[discord]: https://discord.gg/DBwFAES
 [github-issue]: https://github.com/GracesGames/SpaceShooter2DKit/issues
