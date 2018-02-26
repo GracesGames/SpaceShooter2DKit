@@ -10,9 +10,9 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
-### Version 1.1.0 (Pending Approval)
+### Version 1.1.0
 
-##### Release date: TBD
+##### Release date: 26-02-2018
 
 Features:
 
