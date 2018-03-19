@@ -16,6 +16,6 @@ Other questions? Send an [email][mail], join [Discord][discord] or create a [Git
 2. Enable UseMobileUI in BP_Player
 3. (Optional) Enable always show touch interface in Project Settings/Input
 
-[mail]: mailto:GracesGamesBV@gmail.com
+[mail]: mailto:contact@gracesgames.com
 [discord]: https://discord.gg/DBwFAES
 [github-issue]: https://github.com/GracesGames/SpaceShooter2DKit/issues

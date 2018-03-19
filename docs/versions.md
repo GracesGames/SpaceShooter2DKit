@@ -27,6 +27,6 @@ Features:
 * First release
 
 
-[mail]: mailto:GracesGamesBV@gmail.com
+[mail]: mailto:contact@gracesgames.com
 [discord]: https://discord.gg/DBwFAES
 [github-issue]: https://github.com/GracesGames/SpaceShooter2DKit/issues
