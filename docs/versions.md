@@ -10,11 +10,26 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
+### Version 1.2.0
+
+##### Release date: TBD
+
+New features:
+
+* Ammo system
+* Score multiplier pickup
+* AI player location aim
+* Gamepad support
+
+Improvements:
+
+* Pickup chance code clean-up
+
 ### Version 1.1.0
 
 ##### Release date: 26-02-2018
 
-Features:
+New features:
 
 * Mobile support
 * Fire modes (tap, hold and automatic)
