@@ -31,6 +31,7 @@ __Enemies__
     * Speed
     * Rotation
     * Fire projectiles
+    * Homing projectiles
     * Evade skill
     * Sounds
 
@@ -42,16 +43,25 @@ __Health System__
 * Health regen
 * Death state
 
+__Ammo System__
+
+* Ammo system for weapon
+* Unlimited ammo option
+
 __Pickups__
 
 * Health
 * Nuke (damage to all enemies)
+* Score multiplier
 * Shield (blocks next hit)
+* Weapon ammo
 * Weapon upgrade (single, double or triple shot)
+
 
 __Projectiles__
 
 * Define spawn point groups to make creating weapon types simple
+* Homing option
 
 __Spawning system__
 
@@ -65,7 +75,9 @@ __Spawning system__
 __HUD__
 
 * Current health / Maximum health
+* Current ammo / Maximum ammo
 * Current score
+* Score multiplier
 * Nukes
 * Game over
     * Game over text
@@ -84,7 +96,7 @@ __UI__
     * Quit
 * Main menu
     * Start
-    * Screen resolutions options (Desktop)
+    * Screen resolutions options (PC)
     * Controls
     * Quit
     

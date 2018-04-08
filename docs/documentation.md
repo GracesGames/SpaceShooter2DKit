@@ -26,18 +26,21 @@ __Player__
 BP_Player is the player of the game. It handles player input for movement, firing projectiles and activating nukes.  
 The player support movement using the built-in Unreal Engine physics of simple sweep movement.  
 It also allows for several skills using the different pickups like activating a shield and upgrading its weapon from single shot to double or even triple shot.  
+It has an ammo system for the normal weapon and nukes. The weapon ammo also has an unlimited option.
 The player has three fire modes:
 * Tap: fires one projectile per fire input  
 * Hold: continuously fires projectiles until the fire input is released  
 * Automatic: continuously firing projectiles until death
 
-The player also holds the variable to toggle the mobile user interface.
+The player also holds the variable for:
+* Toggle the mobile user interface
+* Toggle gamepad input.
 
 ### Game
 
 __Game Mode__
 
-BP_SpaceShooter2D is the game mode and handles the current score and game over actions.
+BP_SpaceShooter2D is the game mode and handles the current score, score multiplier, and game over actions.
 
 __Game State__
 
@@ -61,9 +64,17 @@ __Nuke Pickup__
 
 BP_NukePickup is a pickup that adds one nuke ammo to the player.
 
+__Score Multiplier Pickup__
+
+BP_ScoreMultiplierPickup is a pickup that activates a score multiplier for a limited amount.
+
 __Shield Pickup__
 
 BP_ShieldPickup is a pickup that activates the shield of the player.
+
+__Weapon Ammo Pickup__
+
+BP_WeaponAmmoPickup is a pickup that adds a set amount of weapon ammo to the player.
 
 __Weapon Upgrade Pickup__
 
@@ -73,7 +84,8 @@ BP_WeaponUpgradePickup is a pickup that upgrades the weapon of the player.
 
 __Base Projectile__
 
-BP_BaseProjectile is the parent class of the enemy and player projectile. It handles the initialization of direction and speed and checks if the target is damageable.
+BP_BaseProjectile is the parent class of the enemy and player projectile. It handles the initialization of direction and speed and checks if the target is damageable.  
+It also contains the homing logic which can be set using a target.
 
 __Enemy Projectile__
 
@@ -104,9 +116,11 @@ BP_WaveSpawner is a spawner that spawns waves of enemies randomly chosen from th
 
 ### UI
 
+All user interfaces support gamepad input.
+
 __HUD__
 
-BP_HUD is the in-game user interface and shows the player the current score, health, and amount of nuke ammo.  
+BP_HUD is the in-game user interface and shows the player the current health, ammo, score, score multiplier and amount of nuke ammo.  
 It also defines the game over screen with the high score, current score and a return to menu button.  
 The MobileHUD version is created for mobile support. It is more centered to show the virtual joystick and buttons (fire, nuke and pause).
 

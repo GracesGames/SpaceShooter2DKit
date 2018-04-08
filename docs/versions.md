@@ -10,15 +10,17 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
-### Version 1.2.0
+### Version 1.2.0 (Pending Approval)
 
 ##### Release date: TBD
 
 New features:
 
-* Ammo system
+* Weapon ammo system (including unlimited option)
+* Weapon ammo pickup
 * Score multiplier pickup
-* AI player location aim
+* Homing projectiles
+* Homing projectile enemy
 * Gamepad support
 
 Improvements:
