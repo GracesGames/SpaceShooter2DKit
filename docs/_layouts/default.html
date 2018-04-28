@@ -38,6 +38,10 @@
             <li><a href="https://discord.gg/DBwFAES"><i class="fab fa-fw fa-discord fa-2x"></i></a></li>
             <li><a href="{{ site.github.repository_url }}"><i class="fab fa-fw fa-github fa-2x"></i></a></li>
         </ul>
+
+        {% if site.github.is_project_page %}
+        <div style="text-align: center"><a href="https://GracesGames.GitHub.io"><img src="{{ site.baseurl }}/assets/images/GG-logo-square.png" alt="Graces-Games-Logo" width="40%"></a><p style="font-weight: bold">Graces Games</p></div>
+        {% endif %}
     </header>
     <section>
 
@@ -54,10 +58,6 @@
         <!--{% if site.github.is_user_page %}-->
         <!--<p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>-->
         <!--{% endif %}-->
-
-        {% if site.github.is_project_page %}
-        <div style="text-align: center"><a href="https://GracesGames.GitHub.io"><img src="{{ site.baseurl }}/assets/images/GG-logo-square.png" alt="Graces-Games-Logo" width="40%"></a><p style="font-weight: bold">Graces Games</p></div>
-        {% endif %}
     </footer>
 </div>
 <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
