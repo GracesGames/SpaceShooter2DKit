@@ -88,7 +88,7 @@ __HUD__
 * Joystick and buttons (Mobile)
 * Pause button (Mobile)
 
-__UI__
+__Menus__
 
 * Pause menu
     * Continue

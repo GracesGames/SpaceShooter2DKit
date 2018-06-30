@@ -10,6 +10,27 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
+### Version 1.3.0
+
+##### Release date: TBD (in review)
+
+New features:
+
+* Slow motion effect on player death
+
+Improvements:
+
+* Integrate Unreal Engine 4 built-in Damage System
+* Integrate Pause Menu in HUD
+* Split UI logic to Space Shooter 2D and Main Menu PlayerController objects
+* Extract common HUD logic to BaseHUD object
+* Added display resolutions enumeration for cleaner code
+* Disable mobile action buttons on death
+* Disabled tick method for actor when not used
+
+* Fix issue where dead enemies would still shoot projectiles
+* Fix issue where enabling homing on projectiles resulted in warnings (pending destroy)
+
 ### Version 1.2.0
 
 ##### Release date: 13-04-2018

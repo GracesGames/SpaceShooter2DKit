@@ -32,15 +32,15 @@ The player has three fire modes:
 * Hold: continuously fires projectiles until the fire input is released  
 * Automatic: continuously firing projectiles until death
 
-The player also holds the variable for:
-* Toggle the mobile user interface
-* Toggle gamepad input.
-
 ### Game
 
-__Game Mode__
+__Main Menu Game Mode__
 
-BP_SpaceShooter2D is the game mode and handles the current score, score multiplier, and game over actions.
+BP_MainMenuGameMode is the game mode and specifies the BP_MainMenuPlayerController as default controller. It is used as the game mode in the Main Menu and Mobile Main Menu maps.
+
+__Space Shooter 2D Game Mode__
+
+BP_SpaceShooter2DGameMode is the game mode and handles the current score, score multiplier, and game over actions. It is used as the game mode in the Test maps.
 
 __Game State__
 
@@ -80,6 +80,21 @@ __Weapon Upgrade Pickup__
 
 BP_WeaponUpgradePickup is a pickup that upgrades the weapon of the player.
 
+### PlayerControllers
+
+__BP_MainMenuPlayerController__
+
+Is responsible for creating and interacting with the Main Menu
+
+__BP_SpaceShooter2DPlayerController__
+ 
+Is responsible for creating and interacting with the HUD (Pause Menu and HUD changes).
+
+The player controllers also hold the variables to:
+
+* Toggle the mobile user interface
+* Toggle gamepad input
+
 ### Projectiles
 
 __Base Projectile__
@@ -116,20 +131,17 @@ BP_WaveSpawner is a spawner that spawns waves of enemies randomly chosen from th
 
 ### UI
 
-All user interfaces support gamepad input.
+All user interfaces support mobile and gamepad input.
 
 __HUD__
 
-BP_HUD is the in-game user interface and shows the player the current health, ammo, score, score multiplier and amount of nuke ammo.  
-It also defines the game over screen with the high score, current score and a return to menu button.  
-The MobileHUD version is created for mobile support. It is more centered to show the virtual joystick and buttons (fire, nuke and pause).
+The BP_HUD is the in-game user interface and shows the player the current health, ammo, score, score multiplier and amount of nuke ammo.  
+It also defines the game over screen with the high score, current score and option to return to menu.  
+The pause menu user interface is also integrated in the HUD and allows the player to continue the game, reset the high score and return to the main menu.  
+The BP_MobileHUD version is created for mobile support. It is more centered, has bigger button for touch input and shows the virtual joystick and buttons (fire, nuke and pause).  
+BP_BaseHUD is used to extract common logic of both BP_HUD and BP_MobileHUD.
 
 __Main Menu__
 
 BP_MainMenu is the main menu user interface and allows the player to start the game, change settings (e.g. resolutions), show the controls and quit the game.  
 The MobileMainMenu version is created for mobile support. It does not show the resolution options.
-
-__Pause Menu__
-
-BP_PauseMenu is the pause menu user interface and allows the player to continue the game, reset the high score and return to the main menu.  
-The MobilePauseMenu version is created for mobile support. It has bigger buttons to better support touch input.
