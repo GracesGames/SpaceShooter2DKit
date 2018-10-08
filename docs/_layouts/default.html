@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" >
     <meta name="viewport" content="width=device-width">
@@ -28,15 +30,15 @@
         <br/>
         <h4 class="view">Share</h4>
         <ul>
-            <li><a href="https://twitter.com/intent/tweet?text={{ site.title }}&url={{ site.url }}{{ site.baseurl }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="noreferrer" target="_blank" title="Share on Twitter"><i class="fab fa-fw fa-twitter fa-2x"></i></a></li>
-            <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ site.baseurl }}" rel="noreferrer" target="_blank" title="Share on Facebook"><i class="fab fa-fw fa-facebook fa-2x"></i></a></li>
-            <li><a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}" rel="noreferrer" target="_blank" title="Share on Google+"><i class="fab fa-fw fa-google-plus fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/intent/tweet?text={{ site.title }}&url={{ site.url }}{{ site.baseurl }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="noreferrer" target="_blank" title="Share on Twitter" style="font-size: 14px"><i class="fab fa-fw fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://facebook.com/sharer.php?u={{ site.url }}{{ site.baseurl }}" rel="noreferrer" target="_blank" title="Share on Facebook" style="font-size: 14px"><i class="fab fa-fw fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://plus.google.com/share?url={{ site.url }}{{ site.baseurl }}" rel="noreferrer" target="_blank" title="Share on Google+" style="font-size: 14px"><i class="fab fa-fw fa-google-plus fa-2x"></i></a></li>
         </ul>
         <h4 class="view">Contact</h4>
         <ul>
-            <li><a aria-label="mail" href="mailto:{{ site.email }}"><i class="fa fa-fw fa-envelope fa-2x" ></i></a></li>
-            <li><a aria-label="discord" href="https://discord.gg/DBwFAES"><i class="fab fa-fw fa-discord fa-2x"></i></a></li>
-            <li><a aria-label="github" href="{{ site.github.repository_url }}"><i class="fab fa-fw fa-github fa-2x"></i></a></li>
+            <li><a aria-label="mail" href="mailto:{{ site.email }}" style="font-size: 14px"><i class="fa fa-fw fa-envelope fa-2x" ></i></a></li>
+            <li><a aria-label="discord" href="https://discord.gg/DBwFAES" style="font-size: 14px"><i class="fab fa-fw fa-discord fa-2x"></i></a></li>
+            <li><a aria-label="github" href="{{ site.github.repository_url }}" style="font-size: 14px"><i class="fab fa-fw fa-github fa-2x"></i></a></li>
         </ul>
 
         {% if site.github.is_project_page %}
