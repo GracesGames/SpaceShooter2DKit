@@ -5,3 +5,7 @@ _site/
 
 # IDE
 .idea
+
+# Resources
+
+/docs/Resources
