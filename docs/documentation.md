@@ -8,6 +8,12 @@ permalink: /documentation/
 
 ***
 
+### AI Controllers
+
+__Suicide AI__
+
+Enemy AI that makes the enemy pawn fly towards the player location if it is above the player. Else the default movement is used. The goal of the AI is to collide with the player to deal the defined collision damage.
+
 ### Characters
 
 __Base Character__

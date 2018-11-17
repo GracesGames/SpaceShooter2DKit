@@ -10,6 +10,22 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
+### Version 1.4.0
+
+##### Release date: TBD (in review)
+
+New features:
+
+* Suicide enemy AI
+* HTML5 support
+
+Improvements:
+
+* Improved enemy - player collision (e.g. better death handling in Enemy)
+
+* Fixed issue where dead enemies would not explode
+* Fixed issue where enemy movement was misbehaving
+
 ### Version 1.3.0
 
 ##### Release date: 02-07-2018
@@ -28,8 +44,8 @@ Improvements:
 * Disable mobile action buttons on death
 * Disabled tick method for actor when not used
 
-* Fix issue where dead enemies would still shoot projectiles
-* Fix issue where enabling homing on projectiles resulted in warnings (pending destroy)
+* Fixed issue where dead enemies would still shoot projectiles
+* Fixed issue where enabling homing on projectiles resulted in warnings (pending destroy)
 
 ### Version 1.2.0
 

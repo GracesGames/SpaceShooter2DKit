@@ -34,6 +34,7 @@ __Enemies__
     * Homing projectiles
     * Evade skill
     * Sounds
+    * AI (e.g. suicide AI)
 
 __Health System__
 
@@ -56,7 +57,6 @@ __Pickups__
 * Shield (blocks next hit)
 * Weapon ammo
 * Weapon upgrade (single, double or triple shot)
-
 
 __Projectiles__
 
