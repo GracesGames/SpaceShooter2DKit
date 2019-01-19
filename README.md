@@ -1,7 +1,7 @@
 # Space Shooter 2D Kit for Unreal Engine 4
 
 <p align="center">
-	<a href="https://www.unrealengine.com/marketplace/space-shooter-2d-kit" rel="noreferrer" target="_blank">Unreal Marketplace</a> |
+	<a href="https://www.unrealengine.com/marketplace/space-shooter-2d-kit" rel="noreferrer" target="_blank">Marketplace</a> |
 	<a href="https://gamejolt.com/games/space-shooter-2d-kit/376593" rel="noreferrer" target="_blank">Demo</a> |
   	<a href="https://gracesgames.com/SpaceShooter2DKit/" rel="noreferrer" target="_blank">Website</a>
 </p>
