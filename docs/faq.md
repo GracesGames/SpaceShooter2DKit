@@ -20,6 +20,6 @@ Other questions? Send an [email][mail], join [Discord][discord] or create a [Git
 
 1. Enable GamePad in BP_MainMenuPlayerController and BP_SpaceShooter2DPlayerController
 
-[mail]: mailto:contact@gracesgames.com
+[mail]: mailto:gracesgamesbv@gmail.com
 [discord]: https://discord.gg/DBwFAES
 [github-issue]: https://github.com/GracesGames/SpaceShooter2DKit/issues
