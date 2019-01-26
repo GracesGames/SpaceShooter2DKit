@@ -26,6 +26,6 @@ __Features include:__
 - Scrolling background,
 - And much more.
 
-For a complete overview, see the [Features](https://gracesgames.github.io/SpaceShooter2DKit/features/) page
+For a complete overview, see the [Features](https://gracesgames.com/SpaceShooter2DKit/features/) page
 
 ![FeaturedImage]({{ "/assets/images/FeaturedImage.png" | absolute_url }})
