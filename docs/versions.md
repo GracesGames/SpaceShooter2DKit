@@ -10,6 +10,18 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
+### Version 1.5.0
+
+##### Release date: Under Review
+
+New features:
+
+* Ship selection
+* Boss enemy
+* Level complete option
+    * On achieved score
+    * On survived time
+
 ### Version 1.4.0
 
 ##### Release date: 20-11-2018

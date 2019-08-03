@@ -72,6 +72,18 @@ __Spawning system__
 * Spawn enemies or pickups
 * Easily extended for any class
 
+__Ship select__
+
+* Allow the player to choose their ship
+* Selection of 9 ships available
+* Option to lock ship based on score
+
+__Level complete system__
+
+* Allow the player to complete the level
+    * by achieved a certain score
+    * by surviving a certain time
+
 __HUD__
 
 * Current health / Maximum health
@@ -96,6 +108,7 @@ __Menus__
     * Quit
 * Main menu
     * Start
+    * Ship select
     * Screen resolutions options (PC)
     * Controls
     * Quit

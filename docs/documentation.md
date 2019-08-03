@@ -37,12 +37,17 @@ The player has three fire modes:
 * Tap: fires one projectile per fire input  
 * Hold: continuously fires projectiles until the fire input is released  
 * Automatic: continuously firing projectiles until death
+The user can select different ships using the ship select menu in the main menu. These are defined in the PlayerShips DataTable.
 
 ### Game
 
 __Main Menu Game Mode__
 
 BP_MainMenuGameMode is the game mode and specifies the BP_MainMenuPlayerController as default controller. It is used as the game mode in the Main Menu and Mobile Main Menu maps.
+
+__Space Shooter 2D Game Instance__
+
+BP_SpaceShooter2DGameInstance is the game instance and handles the ship selection options and currently selected ship. It is used by the game modes, the selection in the main menu and the correct spawning in the Test maps.
 
 __Space Shooter 2D Game Mode__
 
