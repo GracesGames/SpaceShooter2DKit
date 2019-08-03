@@ -37,6 +37,7 @@ The player has three fire modes:
 * Tap: fires one projectile per fire input  
 * Hold: continuously fires projectiles until the fire input is released  
 * Automatic: continuously firing projectiles until death
+
 The user can select different ships using the ship select menu in the main menu. These are defined in the PlayerShips DataTable.
 
 ### Game
