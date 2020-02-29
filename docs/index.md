@@ -23,7 +23,7 @@ __Features include:__
 - Different types of enemies, pickups and weapons   
 - Spawners for enemies, pickup and waves of enemies  
 - Systems for health, ammo, score and save/load functionality
-- Scrolling background,
+- Multiple ships that can be unlocked and selected
 - And much more.
 
 For a complete overview, see the [Features](https://gracesgames.com/SpaceShooter2DKit/features/) page

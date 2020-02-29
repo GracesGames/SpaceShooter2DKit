@@ -10,6 +10,17 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
+### Version 1.6.0
+
+##### Release date: TBD
+
+Improvements:
+
+* Combined MainMenu and MobileMenu into one widget
+* Combined HUD and MobileHUD into one widget, the switch is dynamic using the Platform Name
+* Replace UI text by images, resulting in a clearer look.
+* Greatly reduced package size by scaling and updating textures
+
 ### Version 1.5.0
 
 ##### Release date: 06-08-2019

@@ -102,11 +102,6 @@ __BP_SpaceShooter2DPlayerController__
  
 Is responsible for creating and interacting with the HUD (Pause Menu and HUD changes).
 
-The player controllers also hold the variables to:
-
-* Toggle the mobile user interface
-* Toggle gamepad input
-
 ### Projectiles
 
 __Base Projectile__
@@ -143,17 +138,15 @@ BP_WaveSpawner is a spawner that spawns waves of enemies randomly chosen from th
 
 ### UI
 
-All user interfaces support mobile and gamepad input.
+All user interfaces support mobile and gamepad input. Whether to highlight the selected button can be toggled using the ShouldHighlightFocusedButton variable.
 
 __HUD__
 
 The BP_HUD is the in-game user interface and shows the player the current health, ammo, score, score multiplier and amount of nuke ammo.  
-It also defines the game over screen with the high score, current score and option to return to menu.  
-The pause menu user interface is also integrated in the HUD and allows the player to continue the game, reset the high score and return to the main menu.  
-The BP_MobileHUD version is created for mobile support. It is more centered, has bigger button for touch input and shows the virtual joystick and buttons (fire, nuke and pause).  
-BP_BaseHUD is used to extract common logic of both BP_HUD and BP_MobileHUD.
+It also defines the game over screen with the high score, current score, option to reset the high score and option to return to menu.  
+The pause menu user interface is also integrated in the HUD and allows the player to continue the game or return to the main menu.  
+When on a Mobile platform, the HUD dynamically switches to a more centered version with bigger button for touch input and shows the virtual joystick and buttons (fire, nuke and pause).  
 
 __Main Menu__
 
-BP_MainMenu is the main menu user interface and allows the player to start the game, change settings (e.g. resolutions), show the controls and quit the game.  
-The MobileMainMenu version is created for mobile support. It does not show the resolution options.
+BP_MainMenu is the main menu user interface and allows the player to start the game, contains the settings like help text and ship selection and quit the game.  

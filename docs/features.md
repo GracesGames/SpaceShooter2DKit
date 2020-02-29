@@ -94,6 +94,7 @@ __HUD__
 * Game over
     * Game over text
     * High score
+    * Reset high score
     * Current score
     * Return to main menu
     
@@ -104,12 +105,10 @@ __Menus__
 
 * Pause menu
     * Continue
-    * Clear high score
     * Quit
 * Main menu
     * Start
     * Ship select
-    * Screen resolutions options (PC)
     * Controls
     * Quit
     
