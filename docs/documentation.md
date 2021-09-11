@@ -16,9 +16,9 @@ Enemy AI that makes the enemy pawn fly towards the player location if it is abov
 
 ### Characters
 
-__Base Character__
+__Health Component__
 
-BP_BaseCharacter is the parent class of the base enemy and player. It implements the changing of Flipbooks function and the health and health regen systems.  
+BP_HealthComponent handles the logic for health system and health regen system.  
 The health system handles taking damage, changes the maximum health and checking if the character is dead.  
 The health regen system, regenerates the character's health after not taking damage for a while.
     

@@ -20,8 +20,8 @@ The project will be maintained, so feel free to get in touch to suggest changes,
 
 __Features include:__ 
 
-- Different types of enemies, pickups and weapons   
-- Spawners for enemies, pickup and waves of enemies  
+- Different types of enemies, pickups and weapons
+- Spawners for enemies, pickup and waves of enemies
 - Systems for health, ammo, score and save/load functionality
 - Multiple ships that can be unlocked and selected
 - And much more.

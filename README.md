@@ -16,12 +16,11 @@ Project will be maintained, so feel free to get in touch to suggest changes, fea
 
 ## Features include:
 
-- Different types of enemies, pickups and weapon types  
-- Special weapon
-- Scrolling background,  
-- Spawners for enemies, pickup and waves of enemies  
-- Systems for health, score and save/load functionality  
-- Much more.
+- Different types of enemies, pickups and weapons
+- Spawners for enemies, pickup and waves of enemies
+- Systems for health, ammo, score and save/load functionality
+- Multiple ships that can be unlocked and selected
+- And much more.
 
 For a list of features, documentation and more please see the [website](https://gracesgames.com/SpaceShooter2DKit/)
 

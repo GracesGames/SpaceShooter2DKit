@@ -10,6 +10,19 @@ permalink: /versions/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
+### Version 1.7.0
+
+##### Release date: TBD
+
+Improvements:
+
+* Replaced BaseCharacter logic with HealthComponent
+* Reparented Player to Pawn instead of PaperCharacter, allowing more collision shapes
+* Improved fire logic and projectile direction
+* Improve Main Menu background and added Tiling to scrolling space background material
+
+* Fixed issue where ship select initial ship was not correct
+
 ### Version 1.6.0
 
 ##### Release date: 03-03-2020
