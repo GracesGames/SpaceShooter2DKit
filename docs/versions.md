@@ -12,7 +12,7 @@ Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub is
 
 ### Version 1.7.0
 
-##### Release date: TBD
+##### Release date: 11-09-2021
 
 Improvements:
 
