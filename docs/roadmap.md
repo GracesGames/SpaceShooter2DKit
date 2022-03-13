@@ -10,7 +10,7 @@ permalink: /roadmap/
 
 Want more? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
 
-### Features proposals:
+### Feature proposals:
 
 * Spawn patterns
 * Projectile effects
