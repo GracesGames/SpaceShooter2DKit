@@ -12,7 +12,9 @@ Many thanks to:
 
 **Sprites and Sound Effects:**
 
-[Kenney](https://www.kenney.nl/)
+[Foozle](https://foozlecc.itch.io/)  
+[Screaming Brain Studios](https://screamingbrainstudios.com/)  
+[Kenney](https://www.kenney.nl/) 
 
 **Music:**
 

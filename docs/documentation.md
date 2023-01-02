@@ -8,37 +8,34 @@ permalink: /documentation/
 
 ***
 
-### AI Controllers
+### Components
 
-__Suicide AI__
+__HealthActor Interface__
 
-Enemy AI that makes the enemy pawn fly towards the player location if it is above the player. Else the default movement is used. The goal of the AI is to collide with the player to deal the defined collision damage.
-
-### Characters
+I_HealthActor defines an abstract way to let an actor know it died.
 
 __Health Component__
 
-BP_HealthComponent handles the logic for health system and health regen system.  
-The health system handles taking damage, changes the maximum health and checking if the character is dead.  
-The health regen system, regenerates the character's health after not taking damage for a while.
+BP_HealthComponent handles taking damage, changes the maximum health and checking if the character is dead. Next to that, it handles the armor value and health regeneration options.
+
+### Enemies
     
 __Base Enemy__
 
-BP_BaseEnemy is the generic enemy class. It serves as the base class for all enemy types and can be easily customized using the different property structures.  
-Adding a new enemy is as easy as creating a new rule in the EnemyType data table and specifying its properties.
+BP_BaseEnemy is the generic enemy class. It serves as the base class for all enemy types and can be easily customized using the different property structures and components.
+Adding a new enemy is as easy as creating a new row in the EnemyType data table and specifying its properties.
 
-__Player__
+__Enemy Evade Component__
 
-BP_Player is the player of the game. It handles player input for movement, firing projectiles and activating nukes.  
-The player support movement using the built-in Unreal Engine physics of simple sweep movement.  
-It also allows for several skills using the different pickups like activating a shield and upgrading its weapon from single shot to double or even triple shot.  
-It has an ammo system for the normal weapon and nukes. The weapon ammo also has an unlimited option.
-The player has three fire modes:
-* Tap: fires one projectile per fire input  
-* Hold: continuously fires projectiles until the fire input is released  
-* Automatic: continuously firing projectiles until death
+Used to implement the evade functionality of enemies. The options are defined by an EvadeOptions Structure.
 
-The user can select different ships using the ship select menu in the main menu. These are defined in the PlayerShips DataTable.
+__Enemy Movement Component__
+
+Used to implement the movement functionality of the enemies. Support multiple types and options defined by a enumeration.
+
+__Enemy Shooting Component__
+
+Used to implement the shooting functionality of the enemies. Support multiple types and options defined by a enumeration.
 
 ### Game
 
@@ -46,13 +43,13 @@ __Main Menu Game Mode__
 
 BP_MainMenuGameMode is the game mode and specifies the BP_MainMenuPlayerController as default controller. It is used as the game mode in the Main Menu and Mobile Main Menu maps.
 
-__Space Shooter 2D Game Instance__
-
-BP_SpaceShooter2DGameInstance is the game instance and handles the ship selection options and currently selected ship. It is used by the game modes, the selection in the main menu and the correct spawning in the Test maps.
-
 __Space Shooter 2D Game Mode__
 
 BP_SpaceShooter2DGameMode is the game mode and handles the current score, score multiplier, and game over actions. It is used as the game mode in the Test maps.
+
+__Space Shooter 2D Game Instance__
+
+BP_SpaceShooter2DGameInstance is the game instance and handles the ship selection options and currently selected ship. It is used by the game modes, the selection in the main menu and the correct spawning in the game maps.
 
 __Game State__
 
@@ -74,11 +71,11 @@ BP_HealthPickup is a pickup that return a set amount of health to the player.
 
 __Nuke Pickup__
 
-BP_NukePickup is a pickup that adds one nuke ammo to the player.
+BP_NukePickup is a pickup that adds a set amount of nuke ammo to the player.
 
 __Score Multiplier Pickup__
 
-BP_ScoreMultiplierPickup is a pickup that activates a score multiplier for a limited amount.
+BP_ScoreMultiplierPickup is a pickup that activates a score multiplier for a limited time.
 
 __Shield Pickup__
 
@@ -92,6 +89,44 @@ __Weapon Upgrade Pickup__
 
 BP_WeaponUpgradePickup is a pickup that upgrades the weapon of the player.
 
+__Pickup Interface__
+
+I_Pickup adds the pickup events to the objects that implement it. BasePickup implements I_Pickup.
+
+### Player
+
+__Player__
+
+BP_Player is the player of the game. It handles player input for movement, firing projectiles and activating nukes. Next to that, it handles the player ship visuals based on the selected ship and death consequences e.g. component deactivation. 
+The other logic is handled in specific components to split complexity and logic.
+
+The user can select different ships using the ship select menu in the main menu. These are defined in the PlayerShips DataTable.
+
+__Player Movement Component__
+
+BP_PlayerMovementComponent moves the player using the movement input it receives from BP_Player.
+
+__Player Nuke Component__
+
+BP_PlayerNukeComponent handles the activation and ammo management of the player nukes.
+
+__Player Shield Component__
+
+BP_PlayerShieldComponent handles the (de)activation of the player shield. It contains the logic for showing the shield when activate and playing the sound effects.
+
+__Player Shooting Component__
+
+BP_PlayerShootingComponent handles the shooting input it receives from BP_Player and fires projectiles.
+It also contains logic for upgrading the weapon from single shot to double or even triple shot and managing the player ammo including the unlimited ammo option.
+The player has three fire modes:
+* Tap: fires one projectile per fire input  
+* Hold: continuously fires projectiles until the fire input is released  
+* Automatic: continuously firing projectiles until death
+
+__Shield Actor Interface__
+
+I_ShieldActor adds the ShieldVisibilityChanged event to the actors that implement it.
+
 ### PlayerControllers
 
 __BP_MainMenuPlayerController__
@@ -104,18 +139,10 @@ Is responsible for creating and interacting with the HUD (Pause Menu and HUD cha
 
 ### Projectiles
 
-__Base Projectile__
+__Projectile__
 
-BP_BaseProjectile is the parent class of the enemy and player projectile. It handles the initialization of direction and speed and checks if the target is damageable.  
-It also contains the homing logic which can be set using a target.
-
-__Enemy Projectile__
-
-BP_EnemyProjectile is the projectile fired by enemies and only collides with the player. On collision is damages the player an amount specified by the public variable and destroys itself.
-
-__Player Projectile__
-
-BP_PlayerProjectile is the projectile fired by the player and only collides with the enemies. On collision is damages the enemy an amount specified by the public variable and destroys itself.
+BP_Projectile is the projectile fired by both the player and enemies. On collision it will try to damage the other actor and destroys itself.
+It has several exposed options, for example: flipbook, movement speed and damage.
 
 ### Spawners
 
@@ -135,6 +162,10 @@ BP_PickupSpawner is the spawner for all pickups and uses a list of pickup spawne
 __Wave Spawner__
 
 BP_WaveSpawner is a spawner that spawns waves of enemies randomly chosen from the possible spawnees. It defines several customizable delays, for example delay between enemy spawns and delay between waves.
+
+__Spawner Interface__
+
+I_Spawner adds the activate and deactivate events to the spawners so other systems (e.g. the game mode) can activate and deactivate all spawners without a reference.
 
 ### UI
 

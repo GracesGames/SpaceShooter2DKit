@@ -8,6 +8,34 @@ permalink: /versions/
 
 ***
 
+### Version 1.8.0
+
+##### Release date: 02-01-2023
+
+New features:
+
+* Complete visual redesign for all actors and levels
+* Moved from portrait mode to landscape mode
+* Added EnemyShootDirection modes: EjectDirection and PlayerPosition
+* Added armor option to the Health Component
+
+Improvements:
+
+* Unified enemy projectile and player projectile to a single projectile with exposed options
+* Refactored and simplified player weapon setup and logic
+
+* Extracted enemy movement logic to EnemyMovementComponent
+* Extracted enemy shooting logic to EnemyShootingComponent
+* Extracted enemy evade logic to EnemyEvadeComponent
+
+* Extracted player movement logic to PlayerMovementComponent
+* Extracted player shooting logic to PlayerShootingComponent
+* Extracted player nuke logic to PlayerNukeComponentComponent
+* Extracted player shield logic to PlayerShieldComponent
+
+* Combined level bounds into a single hollow volume
+* Cleaned up spawner logic
+
 ### Version 1.7.0
 
 ##### Release date: 11-09-2021

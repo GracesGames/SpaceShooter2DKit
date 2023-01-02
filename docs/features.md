@@ -23,22 +23,22 @@ __Environment__
 __Enemies__
 
 * Easily define properties using property structures
-* Define type and multiple enemies using enumeration and Data Table
+* Define type and multiple enemies using enumerations and a Data Table
 * Custom property examples:
     * Health
     * Score
+    * Projectile damage
     * Collision damage
-    * Speed
-    * Rotation
+    * Movement speed
+    * Rotation speed
     * Fire projectiles
     * Homing projectiles
     * Evade skill
     * Sounds
-    * AI (e.g. suicide AI)
 
 __Health System__
 
-* Shared logic for Player and Enemies
+* Shared component for player and enemies
 * Custom health values
 * Modify maximum health
 * Health regen
@@ -61,7 +61,6 @@ __Pickups__
 __Projectiles__
 
 * Define spawn point groups to make creating weapon types simple
-* Homing option
 
 __Spawning system__
 
@@ -75,7 +74,7 @@ __Spawning system__
 __Ship select__
 
 * Allow the player to choose their ship
-* Selection of 9 ships available
+* Selection of 4 ships available
 * Option to lock ship based on score
 
 __Level complete system__
