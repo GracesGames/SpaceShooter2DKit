@@ -8,7 +8,7 @@ permalink: /faq/
 
 ***
 
-Other questions? Send an [email][mail], join [Discord][discord] or create a [GitHub issue][github-issue]
+Other questions? Join the [Discord][discord] or send an [email][mail]
 
 #### How to switch to Mobile setup?
 
@@ -18,6 +18,5 @@ Other questions? Send an [email][mail], join [Discord][discord] or create a [Git
 
 1. Enable ShouldHighlightFocusedButton in BP_MainMenu and BP_HUD
 
+[discord]: https://discord.gg/DnNyEMKWca
 [mail]: mailto:gracesgamesbv@gmail.com
-[discord]: https://discord.gg/DBwFAES
-[github-issue]: https://github.com/GracesGames/SpaceShooter2DKit/issues
