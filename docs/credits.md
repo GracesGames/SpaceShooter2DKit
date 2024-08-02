@@ -14,7 +14,7 @@ Many thanks to:
 
 [Foozle](https://foozlecc.itch.io/){:target="_blank"}{:rel="noreferrer"}  
 [Screaming Brain Studios](https://screamingbrainstudios.com/){:target="_blank"}{:rel="noreferrer"}  
-[Kenney](https://www.kenney.nl/) {:target="_blank"}{:rel="noreferrer"}
+[Kenney](https://www.kenney.nl/){:target="_blank"}{:rel="noreferrer"}
 
 **Music:**
 
