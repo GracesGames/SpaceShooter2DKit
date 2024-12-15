@@ -1,12 +1,12 @@
 # Space Shooter 2D Kit for Unreal Engine
 
 <p align="center">
-	<a href="https://www.unrealengine.com/marketplace/space-shooter-2d-kit" rel="noreferrer" target="_blank">Marketplace</a> |
+	<a href="https://www.fab.com/listings/cec8c8a8-a67f-4ba2-8a99-ca31093b2f13" rel="noreferrer" target="_blank">Fab</a> |
 	<a href="https://gamejolt.com/games/space-shooter-2d-kit/376593" rel="noreferrer" target="_blank">Demo</a> |
   	<a href="https://gracesgames.com/SpaceShooter2DKit/" rel="noreferrer" target="_blank">Website</a>
 </p>
 
-Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/space-shooter-2d-kit)
+Available on [Fab](https://www.fab.com/listings/cec8c8a8-a67f-4ba2-8a99-ca31093b2f13)
 
 The Space Shooter 2D Kit is an easy to use template for creating top down space shooter type of games in 2D!
  

@@ -6,7 +6,7 @@ layout: default
 
 <iframe src="https://widgets.gamejolt.com/package/v1?key=AAbt97Rb&theme=light" frameborder="0" width="100%" height="170"></iframe>  
 <br/>
-Available in the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/space-shooter-2d-kit){:target="_blank"}{:rel="noreferrer"}
+Available on [Fab](https://www.fab.com/listings/cec8c8a8-a67f-4ba2-8a99-ca31093b2f13){:target="_blank"}{:rel="noreferrer"}
 
 The Space Shooter 2D Kit is an easy to use template for creating top down space shooter type of games in 2D!
 
