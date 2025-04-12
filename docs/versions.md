@@ -8,6 +8,14 @@ permalink: /versions/
 
 ***
 
+### Version 1.8.1
+
+##### Release date: Under Review
+
+Improvements:
+
+* Fixed issue where the enemy movement speed was inconsistent for different frame rates
+
 ### Version 1.8.0
 
 ##### Release date: 02-01-2023
