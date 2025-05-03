@@ -8,6 +8,14 @@ permalink: /versions/
 
 ***
 
+### Version 1.8.2
+
+##### Release date: 03-05-2025
+
+Improvements:
+
+* Fixed issue where package game would warn about the PostProcessing.PropagateAlpha value
+
 ### Version 1.8.1
 
 ##### Release date: 12-04-2025
